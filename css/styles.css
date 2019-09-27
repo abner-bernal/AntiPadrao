@@ -1,0 +1,1114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/08/2019, 20:54:55
+    Author     : abner
+*/
+
+body {
+    margin: 0;
+    background: #f0f0f0;
+    color: #3c3c3c;
+    font: 700 15px/20px museo-sans-rounded,sans-serif;
+    overflow-y: scroll;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; /*se tiver problemas retirar*/
+}
+
+button, input[type="submit"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-transform: none;
+    text-shadow: none;
+}
+
+img{
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: inherit;
+}
+    
+input, select, textarea{
+    margin: 0;
+    outline: 0;
+    border: 0;
+}
+.bar {
+    height: 45px;
+    width: 100%;
+}
+
+.top_bar {
+    position: relative;
+}
+
+.menu_bar {
+    position: fixed;
+    min-width: 950px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.05);
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#entrar td {
+    padding: 0 0 0 14px;
+}
+
+#cadastrar td{
+    padding-bottom: 10px;
+}
+
+.inputtext {
+    padding-bottom: 4px;
+    margin: 0;
+    width: 142px;
+    border: 1px solid #ccd0d5;
+    border-radius: 3px;
+    margin: 0;
+    padding: 3px;
+    outline: 0;
+}
+#cadastrar .inputtext{
+    width: 300px;
+    padding: 10px;
+}
+.entra {
+    border-radius: 3px;
+    background: #008080;
+    color: #fff;
+    font-size: 14px;
+    padding: 1.5px 14px;
+}
+
+.btn-novo{
+    padding: 3px 5px 3px 15px !important;
+    background: #fff;
+    color: #004c4c;    
+}
+
+.salvar{
+    background: #07c34b;
+    color: #fff;
+}
+
+.salvar:hover{
+    box-shadow: 0 0 15px #005a21 inset;
+}
+
+.apagar{
+    background: #e21616;
+    color: #fff;
+}
+
+.apagar:disabled{
+    opacity: .3;
+    cursor: auto;
+}
+
+.apagar:enabled:hover{
+    box-shadow: 0 0 15px #520707 inset;
+}
+
+.bloc-card .entra{
+    background: #fff;
+    color: #004c4c;
+}
+
+.btn-pesq{
+    cursor: pointer;
+    border-radius: 50%;
+    background: #008080;
+    box-shadow: 0 0 15px #004c4c inset;
+    position: absolute;
+    padding: 5px;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.btn-pesq-img{
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+.bloc-card .entra, .btn-novo, .salvar, .apagar{
+    padding: 5px 20px;
+    margin-left: 15px;    
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#cadastrar .entra{
+    font-size: 16px;
+    padding: 7px 14px;
+    float: right;
+    margin-left: 10px;
+}
+
+.cancel{
+    background: #a5a5a5;
+    color: #fff;
+}
+.select-cad{
+    width: auto;
+    min-width: 170px;
+    height: 25px;
+    border-radius: 100px;
+    padding-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+#cadastrar .input-select{
+    width: 125px;
+}
+
+.font-p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.menu-s{
+    width: 255px;
+}
+
+.window{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 255px);
+}
+
+.colum4{
+    width: 1280px !important;
+}
+
+.colum3{
+    width: 960px !important;
+}
+
+.colum2{
+    width: 640px !important;
+}
+
+.cont{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cont1{
+    min-width: 0;
+    max-width: 100%;
+}
+
+.bar-side{
+    position: fixed;
+    top: 45px;
+    bottom: 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #66b2b2;
+    color: #fff;
+}
+.bar-s{
+    height: calc(100vh - 65px);;
+    width: 255px;
+}
+
+a.opc-start{
+    text-align: center;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+.opc-start{
+    margin-bottom: 8px;
+    padding: 5px 0;
+    padding-left: 35px;
+    border-radius: 50px;
+}
+.opc-start:hover{
+    background: rgba(178, 216, 216, 0.388235294117);
+}
+.opc-selec{
+    background-color: #008080 !important;
+}
+
+.filt-bloc{
+    border-top: 1px solid #b2d8d8;
+    padding: 10px 5px;
+}
+
+.bloc-side{
+    margin-top: 12px;
+    padding: 0 10px;
+}
+
+.opc{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.opc-title{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.opc-font{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card .opc-font{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.card .checkbox-check{
+    border: 2px solid rgba(102, 178, 178, 0.28);
+}
+
+.card .pos-rel{
+    max-width: 90px;
+    padding-right: 0;
+}
+
+.cont-rel{
+    position: relative;
+    padding: 3px 45px 2px 28px;
+    cursor: pointer;
+}
+
+.pos-rel{
+    position: relative;
+    padding: 3px 45px 2px 28px;
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox-tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.filters-checkbox-left {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.checkbox-check {
+    transition: color .1s,border-color .2s;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b2d8d8;
+    color: #fff;
+    line-height: 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.-active{
+    display: inline-flex !important;
+}
+
+.checkbox{
+    transition: color .1s,border-color .2s;
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    line-height: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-tag:checked+.checkbox{
+    background: #004c4c;
+    border: 2px solid #004c4c;
+}
+
+.checkbox-tag:checked+.checkbox .mark-check{
+    background: url('../images/check.svg') no-repeat center;
+    background-size: 13px;
+    width: 13px;
+    height: 13px;
+}
+
+.checkbox-check {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+ .checkbox-tag:checked+.checkbox-check{
+    border: 2px solid #004c4c !important;    
+}
+
+.checkbox-tag:checked+.checkbox-check .mark{
+    background-color: #004c4c;
+}
+
+.checkbox-tag:checked~.filters-quantity{
+    border: 2px solid #004c4c !important;    
+}
+
+.eva-3-tag {
+    transition: padding .2s ease-out,background-color .3s;
+    border-radius: 24px;
+    box-sizing: border-box;
+    display: none;
+    position: relative;
+    align-items: center;
+    height: 27px;
+    margin: 0 8px 8px 0;
+    padding: 0 12px;
+    border: 2px solid #004c4c;
+    background-color: #fff;
+    color: #004c4c;
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.eva-3-tag .tag-text {
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: capitalize;
+}
+.eva-3-tag .fas {
+    transition: opacity .2s ease-out;
+    position: absolute;
+    font-size: 12px;
+    right: 10px;
+    opacity: 1;
+    pointer-events: all;
+}
+.eva-3-tag.-active {
+    padding-right: 30px;
+}
+
+.mark{    
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.filters-quantity {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    min-width: 36px;
+    height: 26px;
+    padding: 0 3px;
+    border: 2px solid #b2d8d8;
+    border-radius: 4px;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    pointer-events: none;
+    background-color: #fff;
+}
+
+.uni-er{
+    width: 310px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+.box-img{
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-img2{
+    max-height: 120px;
+    overflow: overlay;
+}
+
+.uni-img{
+    width: 300px;
+}
+.line-er{
+    overflow: hidden;
+}
+
+.line1{
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+    will-change: transform;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.list-desl{
+    will-change: transform;
+    width: 0;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    height: 130px;
+    position: absolute;
+    top: 0px;    
+    z-index: 1;
+}
+
+.desl-r{
+    right: 5px;
+}
+
+.list-deslN{
+    display: none;
+    opacity: 0;
+}
+.button-list{
+    width: 45px;
+    height: 45px;
+    border-radius: 24px;
+    background-color: #008080;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.box-er{
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+.seta{
+    width: 15px;
+}
+.uni-title{
+    margin: 8px 0;
+    display: -webkit-box;
+    max-height: 3.2rem;
+    min-height: 2.7rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.menu_emp {
+    margin-right: auto;
+    cursor: pointer;
+    padding: 7.5px 0;
+}
+
+._3ROGm {
+    margin-right: 7px;
+}
+
+.pic-bar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #C6DAE6;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.pic-bar-img {
+    vertical-align: middle;
+    height: 33px;
+}
+
+.menu_emp_name {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+._3q7Wh {
+    margin: 1px 0 0 0px;
+}
+
+.OSaWc {
+    background: #fff;
+    color: #3c3c3c;
+    display: none;
+    padding: 5px 0;
+}
+
+._2HujR {
+    min-width: 150px;
+    position: absolute;
+    z-index: 2;
+}
+
+._1ZY-H {
+    border-radius: 3px;
+    border: 1px solid #666;
+}
+
+._31ObI {
+    color: #3c3c3c;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+._3sWvR {
+    color: inherit;
+    display: block;
+    padding: 3px 20px;
+}
+
+._3HsQj:focus>.OSaWc, ._3HsQj:hover>.OSaWc, ._3F6:focus>.E5a, ._3F6:hover>.E5a {
+    display: block;
+}
+
+._31ObI:hover{
+    background: #f0f0f0;
+}
+
+.line{
+    border-top: 1px solid #e9ecef;
+    margin: 5px 0;
+}
+
+.bloc-card{
+    background: #fff;
+    padding: 30px;
+    padding-top: 0;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flex-r-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.padd-soluc{
+    padding-left: 25px;
+    line-height: 35px;
+}
+
+.flex-c-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card6{
+    text-align: center;
+}
+.card6-1{
+    width: 315px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px 15px 0;
+    border: 1px solid #008080;
+    box-shadow: 0 0 8px #008080;
+    border-radius: 15px;
+    padding: 15px;
+}
+.card{
+    border-top: 1px solid #008080;
+    padding: 25px 10px;
+}
+
+.regis-card{
+    margin-top: 40px;
+    padding-left: 15px;
+}
+
+.regis-card .card-title2, .bloc-novo .card-title2{
+    line-height: 25px;
+}
+
+.regis-card input{
+    width: calc(100% - 135px);
+    border-radius: 100px;
+    padding: 3px 9px;
+    border: 0;
+}
+
+.campo-regis{
+    border-radius: 100px;
+    padding: 5px 9px;
+}
+
+.campo-id{
+    border-radius: 100px;
+    padding: 5px 9px;
+    width: 85px;
+    background: #008080;
+    box-shadow: 0 0 15px #004c4c inset;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.regis{
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+}
+
+.btn-remove{
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+.cad{
+    min-height: calc(100vh - 220px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.regis-opc{
+    min-height: 85px;
+    width: 100%;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+
+.regis-cadastrados{
+    font-size: 14px;
+    font-weight: 500 !important;    
+}
+
+.bloc-top-buttons{
+    margin-top: 40px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: sticky;
+    top: 40px;
+    z-index: 2;
+}
+
+.bloc-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 15px;
+}
+
+.flex-r-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloc-buttons2{
+    transition: all 0.1s linear;
+    margin: 0 30px;
+    height: 20px;
+    box-shadow: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.card1{
+    border-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.card2{
+    margin: 0;
+    padding: 18px 10px 0;
+}
+
+.card1 .regis{
+    margin-bottom: 10px;
+}
+
+.card1 .campo-regis{
+    width: calc(100% - 280px);
+    margin-right: 15px;
+}
+
+.card2 .inputtext{
+    width: calc(100% - 110px);
+    margin-left: 10px;
+}
+
+.card3 .card-title2, .card4 .card-title2, .mg-btm{
+    margin-bottom: 15px;
+}
+
+.card3 textarea, .card4 textarea, .card5 textarea, .card7 textarea, .card8 textarea{
+    width: calc(100% - 26px);
+    resize: none;
+    font-family: inherit;
+    height: 90px;
+    padding: 8px 13px;
+    border-radius: 15px;
+}
+
+.card7 textarea{
+    border: 1px solid #b2d8d8;
+    height: 70px;
+    margin-top: 8px;
+}
+
+.card4 .campo-regis{
+    width: 142px;
+}
+
+.card5 textarea{
+    height: 70px !important;
+    margin-top: 5px;
+}
+
+.space-input{
+    margin: 15px 0;
+}
+
+.card7 .card-title2{
+    margin-bottom: 20px;
+}
+
+.card7 .mg-btm{
+    display: inherit;
+}
+
+.card7 .select-cad, .card1 .select-cad{
+    border: 1px solid #b2d8d8;
+}
+
+.card7 .bloc-novo .card-title2{
+    margin-bottom: 0;
+}
+
+.card8 textarea{
+    height: 50px;
+}
+
+.card8 .btn-novo{
+    margin-left: 10px;
+}
+
+.card9 .inputtext{
+    width: calc(100% - 19px);
+    resize: none;
+    font-family: inherit;
+    height: 90px;
+    padding: 7px;
+}
+
+.card8 input{
+    margin-left: 10px;
+    width: calc(100% - 53px);
+}
+
+.card9 .inputtext{
+    height: 50px;
+}
+
+.tent{
+    line-height: 30px;
+}
+
+.adc-tent{
+    margin-top: 30px;
+}
+
+.adc-tent .btn-novo{
+    font-size: 16px;
+}
+
+.adc-tent .smb-novo{
+    width: 21px;
+}
+
+
+.card-title2{
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.card-title3{
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.notify{
+    display: none;
+    position: fixed;
+    padding: 10px 30px;
+    right: 50px;
+    top: 60px;
+    color: #008080;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    background: rgba(102, 178, 178, 0.28);
+    z-index: 13;
+}
+
+.alert{
+    border: 2px solid #f00;
+    color: #f00;
+    background: rgba(255, 0, 0, 0.19);
+}
+
+.alert1{
+    color: #f00;
+    margin-left: 10px;
+}
+
+.alert2{
+    color: #f00;
+    position: absolute;
+    top: 25px;
+    left: 115px;
+}
+
+.card1 .alert2{
+    top: 50px;
+    left: 95px;
+}
+
+.title-regis{
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+
+#save_equivoco .bloc-regis{
+    margin-bottom: 0;
+}
+
+.bloc-regis{
+    margin-bottom: 30px;
+    border: 2px solid #008080;
+    border-radius: 15px;
+    box-shadow: 0 0 8px #008080 inset;
+    background: #b2d8d8;
+    padding: 15px;
+    padding-top: 0;
+}
+
+#remove_conteudo select{
+    min-width: 300px;
+    max-width: 640px;
+    width: auto;
+}
+
+@media (max-width: 1277px){
+    #remove_conteudo select{
+        max-width: 325px;
+    }
+}
+
+.bloc-novo{
+    background: #fff;
+    box-shadow: 0 0 8px #c6dae6 inset;
+    border-radius: 15px;
+    display: none;
+}
+
+.bloc-novo .campo-regis{
+    width: calc(100% - 135px);
+    border-radius: 100px;
+    padding: 3px 9px;
+    border: 1px solid #b2d8d8;
+}
+
+.solu1 .campo-regis{
+    margin: 0;
+    width: calc(100% - 90px);
+}
+
+.solu3 textarea{
+    border: 1px solid #b2d8d8;
+}
+
+.solu3 .campo-regis{
+    width: calc(100% - 45px);
+}
+
+.solu4 .checkbox{
+    border: 2px solid #008080;
+}
+
+#bloc-novo-ocorrencia .campo-regis{
+    width: auto;
+}
+
+.bloc-novo .card6-1{
+    border: 0;
+    box-shadow: 0 0 8px #008080;
+    background: #b2d8d8;
+}
+
+.bloc-novo .adc-tent{
+    margin: 30px 0 15px;
+}
+
+.bloc-novo .btn-novo{
+    background: #b2d8d8;
+}
+
+.novo{
+    padding: 5px 20px;
+    margin-left: 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    background: #66b2b2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.novo:hover, .bloc-novo .btn-novo:hover{
+    box-shadow: 0 0 10px #008080 inset;
+}
+
+.btn-novo:hover{
+    box-shadow: 0 0 10px #008080;
+}
+
+.btn-novo{
+    text-transform: none;
+}
+   
+.padd-novo{
+    padding: 15px;
+}
+
+.card-novo{
+    padding: 9px 0;
+}
+
+.card1 .card-novo{
+    padding: 20px 0;
+}
+
+.smb-novo{
+    width: 19px;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+}
+
+.obs{
+    text-align: right;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+#pesq-id{
+    width: 100px;
+    margin: 0;
+}
+
+#opc-equivoco, #opc-solucao{
+    max-height: 200px;
+    min-height: 100px;
+    overflow: auto;
+}
+
+.id-opc{
+    width: 100px;
+    text-align: center;
+    padding: 3px 9px;
+}
+
+.titulo-opc, .nome-opc{
+    padding: 5px 5px 5px 15px;
+    margin-bottom: 0 !important;
+    margin: 0 10px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: space-between;
+}
+
+.titulo-opc:hover, .nome-opc:hover{
+    background: #dadada;
+}
+
+.bloc-card-comp{
+    margin-top: 40px;
+}
+
+.bloc-card-comp h2{
+    text-align: center;
+}
+
+#save_equivoco, .bloc-card-comp, #save_solucao{
+    box-shadow: 0 0 2px rgba(0, 76, 76, 0.3);
+    border-radius: 10px;
+}
+
+#title-top, #id-top, #nome-top{
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+.inativo{
+    opacity: .8;
+}
